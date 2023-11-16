@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html lang="en-US"> 
+
+ <head> 
+    <meta charset="UTF-8"> 
+       <title>Talão de água</title> 
+         <link rel="stylesheet" href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\z afins.css">
+         <link class="icone" rel="icon" href="C:\Users\MNInfo\Pictures\logo.png">
+  
+  </head>
+
+<body>    
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bx-m'></i>
+        <div class="logo_name">MoneyUp</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+<br><br>
+          <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\a talaoagua.html">
+         <i class='bx bx-droplet' ></i>
+         <span class="links_name">Talão de água</span>
+       </a>
+       <span class="tooltip">Talão de água</span>
+     </li>
+
+      <li>
+        <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\b talaoener.html">
+          <!---->
+          <i class='bx bx-bulb'></i>
+          <span class="links_name">Talão de energia</span>
+        </a>
+         <span class="tooltip">Talão de energia</span>
+      </li>
+     <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\d CNH.html">
+         <i class='bx bx-car'></i>
+         <span class="links_name">CNH</span>
+       </a>
+       <span class="tooltip">CNH</span>
+     </li>
+     <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\e Cartao.html">
+         <i class='bx bx-credit-card' ></i>
+         <span class="links_name">Cartão créd/débi</span>
+       </a>
+       <span class="tooltip">Cartão créd/débi</span>
+     </li>
+
+     <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\f Curriculo.html">
+         <i class="bx bx-id-card" ></i>
+         <span class="links_name">Currículo</span>
+       </a>
+       <span class="tooltip">Currículo</span>
+     </li>
+     <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\g Emprestimo.html">
+         <i class='bx bx-coin-stack' ></i>
+         <span class="links_name">Empréstimo</span>
+       </a>
+       <span class="tooltip">Empréstimo</span>
+    </li>
+
+
+    <li class="profile">
+          
+        <div class="no">
+        <a href="MUPbnt.html" class="bx bx-log-out" id="log_out"></a></div>         
+      
+      <img  id="imagem" src="C:\Users\MNInfo\Downloads\muplogo.png">
+        </li>
+</ul>
+  </div> 
+
+  <section class="home-section">
+
+<center><br><br>
+
+    <h2>Como é calculada a conta de água?</h2>
+<br>
+  <p>A informação de consumo é obtida pelo medidor, refletindo a leitura do hidrômetro. O cálculo da conta de água considera a diferença entre o volume consumido no mês anterior, em metros cúbicos (m³), e o consumo do mês atual. O valor da conta resulta da subtração desses dados, permitindo a aplicação da tarifa sobre os metros cúbicos consumidos. Além disso, a conta inclui rubricas que detalham tarifas para diversos serviços, como tratamento de esgoto, religação, auditoria, taxas de expansão da rede e informações sobre as características da água fornecida ao imóvel.</p>
+
+  <br>
+ 
+  <h2> Saiba ler hidrômetro</h2><br>
+  
+  <p>Sabia que aprender a ler o hidrômetro da sua casa pode ajudar a economizar e pagar menos pela conta de água?</p>
+
+  <br><br><img class="img" src="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\hidro.png">
+
+
+</center>
+
+  <!------------------------------------------------------------------------------------------------------->
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+let closeBtn = document.querySelector("#btn");
+let searchBtn = document.querySelector(".bx-search");
+closeBtn.addEventListener("click", ()=>{
+  sidebar.classList.toggle("open");
+  menuBtnChange();//calling the function(optional)
+});
+searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+  sidebar.classList.toggle("open");
+  menuBtnChange(); //calling the function(optional)
+});
+// following are the code to change sidebar button(optional)
+function menuBtnChange() {
+ if(sidebar.classList.contains("open")){
+   closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+ }else {
+   closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+ }
+}
+</script>
+
+
+ </body>
+</html>

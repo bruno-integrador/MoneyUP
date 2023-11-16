@@ -1,0 +1,149 @@
+<!doctype html>
+
+<html lang="en-US"> 
+
+ <head> 
+    <meta charset="UTF-8"> 
+       <title>Talão de energia</title> 
+         <link rel="stylesheet" href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\z afins.css">
+         <link class="icone" rel="icon" href="C:\Users\MNInfo\Pictures\logo.png">
+  
+  </head>
+
+<body>    
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bx-m'></i>
+        <div class="logo_name">MoneyUp</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+<br><br>
+          <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\a talaoagua.html">
+         <i class='bx bx-droplet' ></i>
+         <span class="links_name">Talão de água</span>
+       </a>
+       <span class="tooltip">Talão de água</span>
+     </li>
+
+      <li>
+        <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\b talaoener.html">
+          <!---->
+          <i class='bx bx-bulb'></i>
+          <span class="links_name">Talão de energia</span>
+        </a>
+         <span class="tooltip">Talão de energia</span>
+      </li>
+     <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\d CNH.html">
+         <i class='bx bx-car'></i>
+         <span class="links_name">CNH</span>
+       </a>
+       <span class="tooltip">CNH</span>
+     </li>
+     <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\e Cartao.html">
+         <i class='bx bx-credit-card' ></i>
+         <span class="links_name">Cartão créd/débi</span>
+       </a>
+       <span class="tooltip">Cartão créd/débi</span>
+     </li>
+
+     <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\f Curriculo.html">
+         <i class="bx bx-id-card" ></i>
+         <span class="links_name">Currículo</span>
+       </a>
+       <span class="tooltip">Currículo</span>
+     </li>
+     <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\g Emprestimo.html">
+         <i class='bx bx-coin-stack' ></i>
+         <span class="links_name">Empréstimo</span>
+       </a>
+       <span class="tooltip">Empréstimo</span>
+    </li>
+
+
+    <li class="profile">
+          
+        <div class="no">
+        <a href="MUPbnt.html" class="bx bx-log-out" id="log_out"></a></div>         
+   
+        
+      <img  id="imagem" src="C:\Users\MNInfo\Downloads\muplogo.png">
+        
+    </li>
+</ul>
+  </div> 
+
+  <section class="home-section">
+<center><br><br>
+
+<h2>Fatura e a Tarifa de Energia</h2><br>
+
+<p>A informação de consumo na conta de água é baseada na leitura do hidrômetro, considerando a diferença entre o volume usado no mês anterior e o atual. O valor da conta é calculado aplicando a tarifa ao consumo em metros cúbicos. Além disso, a conta inclui detalhes sobre várias tarifas, como tratamento de esgoto, religação, auditoria, expansão da rede e características da água fornecida.</p>
+
+<br>
+<h2>O que compõe a fatura no final do mês?</h2><br>
+
+<p>Cada mês, as faturas de energia variam um pouco entre as diferentes distribuidoras, mas independentemente do design distinto, há informações essenciais que precisam estar presentes em todas elas.
+
+  De maneira geral, as faturas de energia podem ser categorizadas em dois tipos principais: aquelas relacionadas ao grupo tarifário A e as vinculadas ao grupo tarifário B.</p>
+
+  <br><br><br>
+<table>
+  
+  <tr>
+  <td> Grupo A</td>  
+
+
+    <td> Grupo B</td>
+  </tr>
+
+  <tr>
+    <td> <img class="imga" src="C:\Users\MNInfo\Documents\MONEYUP\e----------imgs-------------\gra.png"></td>
+  
+    <td> <img class="imga" src="C:\Users\MNInfo\Documents\MONEYUP\e----------imgs-------------\grb.png"></td>
+</tr>
+</table>
+
+<br><br>
+  
+<h2> Aqui um exemplo de talão de energia</h2>
+<br><br><img class="img" src="C:\Users\MNInfo\Documents\MONEYUP\e----------imgs-------------\energia.png">
+
+
+</center>
+  <!------------------------------------------------------------------------------------------------------->
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+let closeBtn = document.querySelector("#btn");
+let searchBtn = document.querySelector(".bx-search");
+closeBtn.addEventListener("click", ()=>{
+  sidebar.classList.toggle("open");
+  menuBtnChange();//calling the function(optional)
+});
+searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+  sidebar.classList.toggle("open");
+  menuBtnChange(); //calling the function(optional)
+});
+// following are the code to change sidebar button(optional)
+function menuBtnChange() {
+ if(sidebar.classList.contains("open")){
+   closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+ }else {
+   closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+ }
+}
+</script>
+
+
+ </body>
+</html>

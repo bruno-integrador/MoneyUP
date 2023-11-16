@@ -1,0 +1,201 @@
+<!doctype html>
+
+<html lang="en-US"> 
+
+ <head> 
+    <meta charset="UTF-8"> 
+       <title>MoneyUp | PlanFi</title> 
+         <link rel="stylesheet" href="b abasMUP.css">
+         <link rel="stylesheet" href="c abas2.css">
+         <link class="icone" rel="icon" href="C:\Users\MNInfo\Pictures\logo.png">
+  
+  </head>
+
+ <body>
+    
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bx-m'></i>
+        <div class="logo_name">MoneyUp</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="search" placeholder="Search...">
+         <span class="tooltip">Pesquisar</span>
+      </li>  
+          <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\a Perfil.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Perfil</span>
+       </a>
+       <span class="tooltip">Perfil</span>
+     </li>
+
+      <li>
+        <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\b Historico.html">
+          <!---->
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Histórico</span>
+        </a>
+         <span class="tooltip">Histórico</span>
+      </li>
+     <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\c Talao.html">
+         <i class='bx bx-bulb'></i>
+         <span class="links_name">Talão Água/Luz</span>
+       </a>
+       <span class="tooltip">Água/Luz</span>
+     </li>
+     <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\d CNH.html">
+         <i class='bx bx-car' ></i>
+         <span class="links_name">CNH</span>
+       </a>
+       <span class="tooltip">CNH</span>
+     </li>
+     <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\e Cartao.html">
+         <i class='bx bx-credit-card' ></i>
+         <span class="links_name">Cartão crédito/débito</span>
+       </a>
+       <span class="tooltip">Cartões</span>
+     </li>
+     <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\f Curriculo.html">
+         <i class="bx bx-id-card" ></i>
+         <span class="links_name">Currículo</span>
+       </a>
+       <span class="tooltip">Currículo</span>
+     </li>
+     <li>
+       <a href="C:\Users\MNInfo\Documents\MONEYUP\d-----------afins-------------\g Emprestimo.html">
+         <i class='bx bx-coin-stack' ></i>
+         <span class="links_name">Empréstimo</span>
+       </a>
+       <span class="tooltip">Empréstimo</span>
+    </li>
+
+
+    <li class="profile">
+          
+        <div class="no">
+        <a href="MUPbnt.html" class="bx bx-log-out" id="log_out"></a></div>         
+      
+      <img  id="imagem" src="C:\Users\MNInfo\Downloads\muplogo.png">
+        </li>
+</ul>
+  </div> 
+ 
+ <section class="home-section">
+  <center>
+      <div class="text">Planejamento Financeiro Mensal</div>
+
+<!------------------------------------------M-O-D-A-L---------------------------------------------------->      
+
+<div class="bx bx-question-mark" id="myBtn"></div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Aqui você poderá se organizar melhor. Coloque a quantia que você possui e em seguida, insira todas as suas despesas. Essas informarções ficarão salva ao submeter. É importante que, em todos os valores, adicionar também os centavos. Sucesso!</p>
+  </div>
+
+</div><br><br>
+
+    <!------------------------------------P-L-A-N-E-J-A-M-E-N-T-O---------------------------------------------------->      
+
+<div class="form">
+  
+  <input type="text" size="12" onkeyup="mascaraMoeda(this, event)" value="" class="numb" placeholder="Salário"><br><br>
+  <input type="text" size="12" onkeyup="mascaraMoeda(this, event)" value="" class="numb" placeholder="Água"><br><br>
+  <input type="text" size="12" onkeyup="mascaraMoeda(this, event)" value="" class="numb" placeholder="Energia"><br><br>
+  <input type="text" size="12" onkeyup="mascaraMoeda(this, event)" value="" class="numb" placeholder="Mercado"><br><br>
+  <input type="text" size="12" onkeyup="mascaraMoeda(this, event)" value="" class="numb" placeholder="Gasolina"><br><br>
+  <input type="text" size="12" onkeyup="mascaraMoeda(this, event)" value="" class="numb" placeholder="Gastos adcionais"><br>
+  <br><input type="submit" class="but" value="Pronto">
+</div>
+
+</center>
+
+</form>
+
+  </section>
+
+  <!------------------------------------------------------------------------------------------------------->
+  <script>
+      let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+
+/*--------------------------------M-O-D-A-L--------------------------------------------*/
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+/*------------------------------D-I-N-H-E-I-R-O-------------------------------------------*/
+String.prototype.reverse = function(){
+  return this.split('').reverse().join(''); 
+};
+
+function mascaraMoeda(campo,evento){
+  var tecla = (!evento) ? window.event.keyCode : evento.which;
+  var valor  =  campo.value.replace(/[^\d]+/gi,'').reverse();
+  var resultado  = "";
+  var mascara = "##.###.###,##".reverse();
+  for (var x=0, y=0; x<mascara.length && y<valor.length;) {
+    if (mascara.charAt(x) != '#') {
+      resultado += mascara.charAt(x);
+      x++;
+    } else {
+      resultado += valor.charAt(y);
+      y++;
+      x++;
+    }
+  }
+  campo.value = resultado.reverse();
+}
+
+</script>
+
+</body>
+</html>
+
